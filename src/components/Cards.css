@@ -1,0 +1,63 @@
+.Cards {
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  border: 1px solid rgb(235, 228, 228);
+  padding: 8px;
+  border-radius: 5px;
+  margin: 7px;
+  background-color: rgb(34, 17, 161);
+  color: #fff;
+}
+.card-image img {
+  width: 100%;
+}
+.title {
+  font-size: larger;
+  font-weight: 500;
+}
+.card-icon {
+  display: flex;
+  justify-content: end;
+  margin-top: -30px;
+}
+.heart-icon {
+  border-radius: 50%;
+  padding: 10px 10px 4px 10px;
+  border: none;
+}
+
+.filter-btn {
+  font-size: large;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 6px 20px;
+  margin: 6px;
+}
+.filter-btn:hover {
+  background-color: rgb(225, 225, 225);
+  color: rgb(52, 52, 52);
+}
+.filter-btn-active {
+  background-color: white;
+  color: black;
+}
+.filter {
+  text-align: center;
+}
+.navbar {
+  background-color: rgb(4, 4, 74);
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
