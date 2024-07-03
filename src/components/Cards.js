@@ -8,6 +8,7 @@ function Cards(props) {
   const getCourses = () => {
     let allcourses = [];
     try {
+      console.log(courses);
       Object.values(courses).forEach((courseCategory) => {
         courseCategory.forEach((course) => {
           allcourses.push(course);
@@ -20,9 +21,11 @@ function Cards(props) {
 
   return (
     <div className="Cards">
-      {getCourses().map((course) => (
-        <Card key={course.id} course={course} />
-      ))}
+      {getCourses().length > 0 ? (
+        getCourses().map((course) => <Card key={course.id} course={course} />)
+      ) : (
+        <h2>Course not found</h2>
+      )}
     </div>
   );
 }
